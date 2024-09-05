@@ -33,4 +33,27 @@ fetch("data.json")
       container.appendChild(itemElement);
     });
   })
-  .catch((error) => console.error("Erreur lors du chargement du JSON:", error));
+
+  function createCard() {
+    const card = document.createElement('div');
+    card.classList.add('item-card');
+
+    card.innerHTML = `
+    <p class="panier">Your Cart <span>()</span></p>
+    <img src="assets/images/illustration-empty-cart.svg" class="img-panier">
+    <p class="text-panier">Your added items will appear here</p>
+
+
+    `;
+
+    return card;
+  }
+
+  function addCardToContainer() {
+    const container = document.getElementById('card-container');
+    const newCard = createCard();
+    container.appendChild(newCard);
+  }
+  window.onload = addCardToContainer;
+
+  // .catch((error) => console.error("Erreur lors du chargement du JSON:", error));
