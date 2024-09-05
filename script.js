@@ -44,7 +44,6 @@ fetch("data.json")
     <img src="assets/images/illustration-empty-cart.svg" class="img-panier">
     <p class="text-panier">Your added items will appear here</p>
 
-
     `;
 
     return card;
