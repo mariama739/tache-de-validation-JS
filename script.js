@@ -17,7 +17,7 @@ fetch("data.json")
     }));
 
     console.log(mappedData); // Afficher les données mappées
-  
+
     const container = document.getElementById("items-container");
     mappedData.forEach((item) => {
       const itemElement = document.createElement("div");
@@ -29,7 +29,7 @@ fetch("data.json")
         <p class="category">${item.category}</p>
         <h2 class="name">${item.name}</h2>
         <p class="price"> $${item.price}</p>
-      
+
       `;
       container.appendChild(itemElement);
     });
@@ -54,6 +54,6 @@ fetch("data.json")
     const newCard = createCard();
     container.appendChild(newCard);
   }
-  window.onload = addCardToContainer;
+  window.onload = addCardToContainer();
 
   // .catch((error) => console.error("Erreur lors du chargement du JSON:", error));
