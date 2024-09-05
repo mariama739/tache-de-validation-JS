@@ -21,8 +21,10 @@ fetch("data.json")
     const container = document.getElementById("items-container");
     mappedData.forEach((item) => {
       const itemElement = document.createElement("div");
+
+      // itemElement.className = maClasse
       itemElement.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" class="imgs">
+        <img src="${item.image}" alt="${item.name}">
         <h2>${item.name}</h2>
         <p>Category: ${item.category}</p>
         <p>Price: $${item.price}</p>
@@ -30,4 +32,4 @@ fetch("data.json")
       container.appendChild(itemElement);
     });
   })
-  // .catch((error) => console.error("Erreur lors du chargement du JSON:", error));
+  .catch((error) => console.error("Erreur lors du chargement du JSON:", error));
