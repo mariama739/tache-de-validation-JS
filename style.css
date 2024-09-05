@@ -1,7 +1,11 @@
 img{
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
+  width: 135%;
+  border-radius: 10px;
+}
+
+.price{
+  color: rgb(163, 10, 10);
+  font-weight: 700;
 }
 
 #items-container{
@@ -10,4 +14,16 @@ img{
   width: 70%;
   display: grid;
   grid-template-columns: 200px 200px 200px; 
+}
+
+.icon{
+  width: 20px;
+  margin-right: 10px;
+}
+.category{
+    color: rgba(145, 133, 133, 0.897);
+  font-weight: 700;
+}
+.name{
+  font-size: 15px;
 }

@@ -23,11 +23,12 @@ fetch("data.json")
       const itemElement = document.createElement("div");
       itemElement.className = 'maClasse'
       itemElement.innerHTML = `
-    
+
         <img src="${item.image}" alt="${item.name}" class="imgs">
-        <h2>${item.name}</h2>
-        <p>Category: ${item.category}</p>
-        <p>Price: $${item.price}</p>
+        <button class="button-add"><img src="assets/images/icon-add-to-cart.svg" alt="icon" class="icon">Add To Card</button>
+        <p class="category">${item.category}</p>
+        <h2 class="name">${item.name}</h2>
+        <p class="price"> $${item.price}</p>
       
       `;
       container.appendChild(itemElement);
