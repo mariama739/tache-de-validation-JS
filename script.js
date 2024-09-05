@@ -10,7 +10,7 @@ fetch("data.json")
   .then((data) => {
     // Mapper les données
     const mappedData = data.map((item) => ({
-      image: item.image.thumbnail, // Par exemple, ne garder que la miniature
+      image: item.image.desktop, // Par exemple, ne garder que la miniature
       name: item.name,
       category: item.category,
       price: item.price,
@@ -21,13 +21,14 @@ fetch("data.json")
     const container = document.getElementById("items-container");
     mappedData.forEach((item) => {
       const itemElement = document.createElement("div");
-
-      // itemElement.className = maClasse
+      itemElement.className = 'maClasse'
       itemElement.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
+    
+        <img src="${item.image}" alt="${item.name}" class="imgs">
         <h2>${item.name}</h2>
         <p>Category: ${item.category}</p>
         <p>Price: $${item.price}</p>
+      
       `;
       container.appendChild(itemElement);
     });
