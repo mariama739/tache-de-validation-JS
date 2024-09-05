@@ -1,11 +1,11 @@
 img{
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
+  width: 135%;
+  border-radius: 10px;
 }
 
-.container{
-    display: flex;
+.price{
+  color: rgb(163, 10, 10);
+  font-weight: 700;
 }
 
 #items-container{
@@ -14,30 +14,16 @@ img{
   width: 70%;
   display: grid;
   grid-template-columns: 200px 200px 200px; 
-  margin-top: 50px;
 }
 
-.item-card{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    padding: 15px;
-    text-align: center;
+.icon{
+  width: 20px;
+  margin-right: 10px;
 }
-
-.panier{
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(163, 10, 10);
-}
-
-
-.img-panier{
-    width: 40%;
-}
-
-.text-panier {
-    font-weight: 600;
+.category{
     color: rgba(145, 133, 133, 0.897);
+  font-weight: 700;
+}
+.name{
+  font-size: 15px;
 }
