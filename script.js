@@ -22,7 +22,7 @@ fetch("data.json")
     mappedData.forEach((item) => {
       const itemElement = document.createElement("div");
       itemElement.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
+        <img src="${item.image}" alt="${item.name}" class="imgs">
         <h2>${item.name}</h2>
         <p>Category: ${item.category}</p>
         <p>Price: $${item.price}</p>
