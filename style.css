@@ -49,8 +49,6 @@ img{
     font-weight: 700;
     color: rgb(163, 10, 10);
 }
-
-
 .img-panier{
     width: 40%;
 }
@@ -58,4 +56,15 @@ img{
 .text-panier {
     font-weight: 600;
     color: rgba(145, 133, 133, 0.897);
+}
+.button-add{
+  background-color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 2px solid gray;
+  margin-left: 50px;
+  /* position: absolute;
+  bottom:  31.5%; */
 }
