@@ -1,11 +1,11 @@
 img{
-  width: 135%;
-  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
 }
 
-.price{
-  color: rgb(163, 10, 10);
-  font-weight: 700;
+.container{
+    display: flex;
 }
 
 #items-container{
@@ -13,26 +13,9 @@ img{
   justify-content: space-around;
   width: 70%;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px; 
   margin-top: 50px;
- 
 }
-
-.icon{
-  width: 20px;
-  margin-right: 10px;
-}
-.category{
-    color: rgba(145, 133, 133, 0.897);
-  font-weight: 700;
-}
-.name{
-  font-size: 15px;
-}
-.container{
-    display: flex;
-}
-
 
 .item-card{
     background-color: #fff;
@@ -41,7 +24,6 @@ img{
     width: 300px;
     padding: 15px;
     text-align: center;
-    margin-left: 30px;
 }
 
 .panier{
